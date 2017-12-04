@@ -1,3 +1,4 @@
+// Master object and using composition to create objects within objects.
 public class PC {
     private Case theCase;
     private Monitor monitor;
