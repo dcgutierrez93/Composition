@@ -10,14 +10,14 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    // Getters
-    public Case getTheCase() {
-        return theCase;
+    // Function
+    public void powerUp(){
+        theCase.pressPowerButton();
+        drawLogo();
     }
-    public Monitor getMonitor() {
-        return monitor;
-    }
-    public Motherboard getMotherboard() {
-        return motherboard;
+
+    private void drawLogo() {
+        // fancy graphics.
+        monitor.drawPixelAt(1200, 50, "yellow");
     }
 }
